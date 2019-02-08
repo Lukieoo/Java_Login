@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane opacity="0.99" prefHeight="296.0" prefWidth="353.0" style="-fx-background-color: #838383;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Content.Menu.Register">
+   <children>
+      <TextField fx:id="username" alignment="CENTER" layoutX="51.0" layoutY="31.0" prefHeight="25.0" prefWidth="251.0" promptText="USERNAME" AnchorPane.topAnchor="31.0" />
+      <PasswordField fx:id="password" alignment="CENTER" layoutX="51.0" layoutY="70.0" prefHeight="25.0" prefWidth="251.0" promptText="PASSWORD" />
+      <PasswordField fx:id="repaeatpassword" alignment="CENTER" layoutX="51.0" layoutY="108.0" prefHeight="25.0" prefWidth="251.0" promptText="REPEAT PASSWORD" />
+      <TextField fx:id="email" alignment="CENTER" layoutX="51.0" layoutY="145.0" prefHeight="25.0" prefWidth="251.0" promptText="E-MAIL" />
+      <ImageView fitHeight="45.0" fitWidth="31.0" layoutX="15.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/unlocked.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="31.0" layoutX="15.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/dove.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="15.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/prisoner.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="15.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="28.0">
+         <image>
+            <Image url="@../img/knight.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Register" layoutX="127.0" layoutY="234.0" mnemonicParsing="false" onAction="#Create_acount" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #212121;" text="Rgister" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <RadioButton fx:id="Select" accessibleRole="HYPERLINK" layoutX="112.0" layoutY="204.0" mnemonicParsing="false" text="Accept Terms of use" textFill="WHITE" />
+      <Label fx:id="error" cache="true" layoutY="173.0" mouseTransparent="true" prefHeight="31.0" prefWidth="353.0" textAlignment="CENTER" textFill="RED" AnchorPane.bottomAnchor="92.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <effect>
+      <InnerShadow choke="0.09" height="65.46" radius="40.39" width="98.1" />
+   </effect>
+</AnchorPane>
